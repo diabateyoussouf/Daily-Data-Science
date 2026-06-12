@@ -13,7 +13,7 @@ L'objectif est de pratiquer régulièrement le nettoyage de données (Preprocess
 | Défi | Dataset / Sujet | Objectif ML | Modèles Testés | Statut |
 | :---: | :--- | :--- | :--- | :---: |
 | **01** | [Titanic](./dailly_01_dataset_titanic.ipynb) | Classification binaire, gestion des doublons/NaN, feature engineering, overfitting. | Régression Logistique, SVM, Random Forest | ✅ Complété |
-| **02** | *À venir...* | *Prochain défi* | *En attente* | ⏳ À venir |
+| **02** | [Titanic](./dailly_02_dataset_house_price.ipynb) | Regression lineaire multiVar,Gestions des doublons,features engineering,Overfitting |Ridge,RandomForestRegressor,HistGradientBoostingRegressor | ✅ |
 | **03** | *À venir...* | *Prochain défi* | *En attente* | ⏳ À venir |
 
 ---
