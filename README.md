@@ -9,16 +9,13 @@ L'objectif est de pratiquer régulièrement le nettoyage de données (Preprocess
 ---
 
 ## 📚 Table des Matières des Défis
-
 | Défi | Dataset / Sujet | Objectif ML | Modèles Testés | Statut |
 | :---: | :--- | :--- | :--- | :---: |
 | **01** | [Titanic](./dailly_01_dataset_titanic.ipynb) | Classification binaire, gestion des doublons/NaN, feature engineering, overfitting. | Régression Logistique, SVM, Random Forest | ✅ |
 | **02** | [House_price](./dailly_02_dataset_house_price.ipynb) | Regression lineaire multiVar,Gestions des doublons,features engineering,Overfitting |Ridge,RandomForestRegressor,HistGradientBoostingRegressor | ✅ |
-| **03** |[Forecasting](./dailly_03_dataset_time-series-forecasting.ipynb)  | Groupement,Historique,Serie Temporaire  | HistGradientBoostingRegressor | ✅|
-| **04** |[IMDB_Movie](./dailly_04_dataset_IMDB_Movie_Reviews.ipynb)   | NLP  | SVM,Naive Bayes,GridSearch | ✅ |
-| **05** |...  | ...  | .. | ... |
-
-
+| **03** | [Forecasting](./dailly_03_dataset_time-series-forecasting.ipynb)  | Groupement,Historique,Serie Temporaire  | HistGradientBoostingRegressor | ✅|
+| **04** | [IMDB_Movie](./dailly_04_dataset_IMDB_Movie_Reviews.ipynb)   | NLP  | SVM,Naive Bayes,GridSearch | ✅ |
+| **05** | [IMDB_Movie_DeepL](./dailly_05_dataset_IMDB_Movie_Reviews_DeepL.ipynb) | NLP Sequentiel, Reseaux de neurones, Surapprentissage | Embedding, LSTM | ✅ |
 
 ---
 
