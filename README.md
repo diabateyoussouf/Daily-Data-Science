@@ -17,6 +17,7 @@ L'objectif est de pratiquer régulièrement le nettoyage de données (Preprocess
 | **04** | [IMDB_Movie](./dailly_04_dataset_IMDB_Movie_Reviews.ipynb)   | NLP  | SVM,Naive Bayes,GridSearch | ✅ |
 | **05** | [IMDB_Movie_DeepL](./dailly_05_dataset_IMDB_Movie_Reviews_DeepL.ipynb) | NLP Sequentiel, Reseaux de neurones, Surapprentissage | Embedding, LSTM | ✅ |
 | **06** | [Credit_Card_Fraud](./dailly_06_dataset_credit_card_fraud.ipynb) | Clustering, Detection d'anomalies, Isolation Forest, Non supervise | Isolation Forest, K-Means, DBSCAN | ⏳ |
+| **07** | [Customer_Churn](./dailly_07_dataset_churn.ipynb) | Classification, Encodage (OHE), Gestion du déséquilibre, Optimisation de seuil | LogReg, Random Forest, SVM, **XGBoost** | ✅ F1-Score: 0.65 (Seuil à 60%) |
 
 ---
 
