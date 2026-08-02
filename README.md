@@ -1,22 +1,16 @@
 # 🎯 Daily Machine Learning & Data Science Challenge
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
-Bienvenue sur mon dépôt de suivi quotidien ! Ce projet est un espace d'entraînement personnel où je documente mon apprentissage du Machine Learning, jour après jour, à travers des cas pratiques et des notebooks concrets.
+Bienvenue sur mon dépôt de suivi quotidien ! Ce projet est un espace d'entraînement personnel où je documente mon apprentissage du Machine Learning et du Deep Learning, jour après jour, à travers des cas pratiques et des notebooks concrets.
 
-L'objectif est de pratiquer régulièrement le nettoyage de données (Preprocessing), le Feature Engineering, la sélection de modèles et l'optimisation des hyperparamètres.
-
----
-
-Voici ton tableau des matières mis à jour avec l'intégration du **Défi 08** concernant ton système RAG, ses métriques d'évaluation spécifiques et l'utilisation de Mistral AI.
+L'objectif est de pratiquer régulièrement le nettoyage de données (Preprocessing), le Feature Engineering, la sélection de modèles, le Computer Vision et l'optimisation des hyperparamètres.
 
 ---
 
 ## 📚 Table des Matières des Défis
 
-## 📚 Table des Matières des Défis
-
-| Défi | Dataset / Sujet | Objectif ML / RAG | Modèles Testés | Statut |
+| Défi | Dataset / Sujet | Objectif ML / RAG / CV | Modèles Testés | Statut |
 | --- | --- | --- | --- | --- |
 | **01** | [Titanic](./dailly_01_dataset_titanic.ipynb) | Classification binaire, gestion des doublons/NaN, feature engineering, overfitting. | Régression Logistique, SVM, Random Forest | ✅ |
 | **02** | [House_price](./dailly_02_dataset_house_price.ipynb) | Regression lineaire multiVar,Gestions des doublons,features engineering,Overfitting | Ridge, RandomForestRegressor, HistGradientBoostingRegressor | ✅ |
@@ -26,7 +20,8 @@ Voici ton tableau des matières mis à jour avec l'intégration du **Défi 08** 
 | **06** | [Credit_Card_Fraud](./dailly_06_dataset_credit_card_fraud.ipynb) | Clustering, Detection d'anomalies, Isolation Forest, Non supervise | Isolation Forest, K-Means, DBSCAN | ⏳ |
 | **07** | [Customer_Churn](./dailly_07_dataset_churn.ipynb) | Classification, Encodage (OHE), Gestion du déséquilibre, Optimisation de seuil | LogReg, Random Forest, SVM, **XGBoost** | ✅ F1-Score: 0.65 (Seuil à 60%) |
 | **08** | [RAG_Evaluation](./dailly_08_dataset_RAG.ipynb) | RAG avec Mémoire, Reformulation (Query Condensation), Alignement, Évaluation LLM-as-a-judge | **Mistral-Large**, Open-Mistral-7B, ChromaDB | ✅ Fidélité: 0.40 / Pertinence: 0.54 |
-| **09** | [Transactional_Feature_Eng](./dailly_09_dataset_transactional_ltv.ipynb) | Feature Engineering 1-à-N, Agrégation Temporelle (RFM), Anti-Data Leakage (Cutoff Date), Target Encoding | Pandas / Polars, **LightGBM**, XGBoost | 🎯 En cours |
+| **09** | [Transactional_Feature_Eng](./Daily_09.ipynb) | Feature Engineering 1-à-N, Agrégation Temporelle (RFM), Anti-Data Leakage (Cutoff Date), Target Encoding | Pandas / Polars, **LightGBM**, XGBoost | 🎯 En cours |
+| **10** | [Fish_Object_Detection](./Daily_10_FastRCNN.ipynb) | Computer Vision, Transfer Learning, Fine-tuning Faster R-CNN, Boucle d'entraînement PyTorch | **Faster R-CNN** (MobileNetV3), PyTorch, Torchvision | ✅ |
 
 ---
 
@@ -37,7 +32,8 @@ Voici ton tableau des matières mis à jour avec l'intégration du **Défi 08** 
 * Imputation chirurgicale des données manquantes (`NaN`) basée sur des agrégations logiques (`groupby` + `transform`).
 * Encodage propre (Binaire, One-Hot) et standardisation des échelles avec `StandardScaler`.
 
-### 🧠 2. Modélisation sans concession
+### 🧠 2. Modélisation & Computer Vision
 * Évaluation systématique sur un ensemble de validation distinct (`X_test`, `y_test`).
 * Traque de l'**Overfitting** en comparant scrupuleusement les performances entre le *Train* et le *Test*.
-* Création de fonctions d'automatisation pour entraîner et comparer visuellement plusieurs algorithmes et leurs matrices de confusion.
+* Adaptations d'architectures pré-entraînées (Transfer Learning), remplacement de têtes de classification et custom training loops sous PyTorch.
+* Création de fonctions d'automatisation pour entraîner et comparer visuellement plusieurs algorithmes et leurs résultats (boîtes englobantes, matrices de confusion).
